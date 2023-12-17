@@ -1,0 +1,84 @@
+[
+    {
+        "Id": 1,
+        "Fecha": "20-11-2023",
+        "Duracion_min": 45,
+        "Distancia_km": 5.7,
+        "Tipo": "Carrera"
+    },
+    {
+        "Id": 2,
+        "Fecha": "21-11-2023",
+        "Duracion_min": 30,
+        "Distancia_km": 3.5,
+        "Tipo": "Caminar",
+        "Desnivel_m": 50
+    },
+    {
+        "Id": 3,
+        "Fecha": "23-11-2023",
+        "Duracion_min": 60,
+        "Distancia_km": 10.2,
+        "Tipo": "Carrera"
+    },
+    {
+        "Id": 4,
+        "Fecha": "25-11-2023",
+        "Duracion_min": 40,
+        "Distancia_km": 4.8,
+        "Tipo": "Caminar",
+        "Desnivel_m": 30
+    },
+    {
+        "Id": 5,
+        "Fecha": "26-11-2023",
+        "Duracion_min": 55,
+        "Distancia_km": 7.2,
+        "Tipo": "Carrera"
+    },
+    {
+        "Id": 6,
+        "Fecha": "28-11-2023",
+        "Duracion_min": 25,
+        "Distancia_km": 2.9,
+        "Tipo": "Caminar",
+        "Desnivel_m": 20
+    },
+    {
+        "Id": 7,
+        "Fecha": "30-11-2023",
+        "Duracion_min": 50,
+        "Distancia_km": 6.5,
+        "Tipo": "Carrera"
+    },
+    {
+        "Id": 8,
+        "Fecha": "02-12-2023",
+        "Duracion_min": 35,
+        "Distancia_km": 4.2,
+        "Tipo": "Caminar",
+        "Desnivel_m": 40
+    },
+    {
+        "Id": 9,
+        "Fecha": "03-12-2023",
+        "Duracion_min": 48,
+        "Distancia_km": 6,
+        "Tipo": "Carrera"
+    },
+    {
+        "Id": 10,
+        "Fecha": "05-12-2023",
+        "Duracion_min": 32,
+        "Distancia_km": 3.9,
+        "Tipo": "Caminar",
+        "Desnivel_m": 25
+    },
+    {
+        "Id": 11,
+        "Fecha": "11-12-2023",
+        "Duracion_min": 50,
+        "Distancia_km": 10,
+        "Tipo": "Carrera"
+    }
+]
