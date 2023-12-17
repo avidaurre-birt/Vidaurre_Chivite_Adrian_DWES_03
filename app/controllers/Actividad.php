@@ -100,7 +100,7 @@ class Actividad
 
                     // Actualiza solo si se proporciona un nuevo valor
                     if (empty($data['Fecha'])) {
-                        $data['Fecha'] = $actividad[$id]['Fecha'];
+                        $data['Fecha'] = $actividad['Fecha'];
                     }
                     if (empty($data['Duracion_min'])) {
                         $data['Duracion_min'] = $actividad['Duracion_min'];
