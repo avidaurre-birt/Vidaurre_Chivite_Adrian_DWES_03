@@ -19,6 +19,5 @@ class HttpCodes
         header('Content-Type: application/json');
         http_response_code($statusCode);
         echo json_encode($response);
-        exit();
     }
 }

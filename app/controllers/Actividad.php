@@ -19,10 +19,10 @@ class Actividad
 
         if ($actividades) {
 
-            print_r($actividades) . '<br>';
-
             // Devuelve las actividades con el código HTTP 200 (OK)
             HttpCodes::sendResponse(HttpCodes::HTTP_OK, "Lista de actividades obtenida con exito.");
+			print_r($actividades) . '<br>';
+			
         } else {
             // Devuelve un mensaje de error con el código HTTP 500 (Internal Server Error)
             HttpCodes::sendResponse(HttpCodes::HTTP_INTERNAL_SERVER_ERROR, "Error al obtener la lista de actividades.");
@@ -46,9 +46,9 @@ class Actividad
 
         if ($actividadEncontrada) {
             // Devuelve la actividad encontrada con el código HTTP 200 (OK)
+			HttpCodes::sendResponse(HttpCodes::HTTP_OK, "Actividad encontrada con exito.");
             print_r($actividadEncontrada) . '<br>';
-
-            HttpCodes::sendResponse(HttpCodes::HTTP_OK, "Actividad encontrada con exito.");
+           
         } else {
             // Devuelve un mensaje de error con el código HTTP 404 (Not Found)
             HttpCodes::sendResponse(HttpCodes::HTTP_NOT_FOUND, "No se encontro la actividad con el ID proporcionado.");
@@ -77,11 +77,10 @@ class Actividad
 
             // Guarda el nuevo array de actividades en el archivo actividades.json
             file_put_contents('../data/actividades.json', json_encode($actividades, JSON_PRETTY_PRINT));
-
+			
+            HttpCodes::sendResponse(HttpCodes::HTTP_CREATED, "Actividad creada con exito.");
             print_r($actividades[$nuevoId - 1]) . '<br>';
 
-
-            HttpCodes::sendResponse(HttpCodes::HTTP_CREATED, "Actividad creada con exito.");
         } else {
             //Devuelve un mensaje de error con el código HTTP 400 (Bad Request)
             HttpCodes::sendResponse(HttpCodes::HTTP_BAD_REQUEST, "Datos incompletos o incorrectos.");
@@ -128,10 +127,10 @@ class Actividad
 
                     // Guarda el nuevo array de actividades en el archivo actividades.json
                     file_put_contents('../data/actividades.json', json_encode($actividades, JSON_PRETTY_PRINT));
-
+					
+                    HttpCodes::sendResponse(HttpCodes::HTTP_OK, "Actividad actualizada con exito.");
                     print_r($actividades[$id]) . '<br>';
 
-                    HttpCodes::sendResponse(HttpCodes::HTTP_OK, "Actividad actualizada con exito.");
                 }
             }
             if (!$actividadEncontrada) {
